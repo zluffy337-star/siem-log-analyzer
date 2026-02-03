@@ -1,0 +1,93 @@
+timestamp,username,src_ip,country,event_type,status
+2025-01-14 10:01,admin,45.83.12.10,Russia,login,failed
+2025-01-14 10:02,admin,45.83.12.10,Russia,login,failed
+2025-01-14 10:03,admin,45.83.12.10,Russia,login,failed
+2025-01-14 10:05,john,10.0.0.5,India,login,success
+2025-01-14 02:30,john,8.34.21.6,USA,login,success
+2025-01-14 10:10,maria,103.21.55.6,India,login,failed
+
+# Additional sample logs
+2025-01-14 11:00,admin,45.83.12.10,Russia,login,failed
+2025-01-14 11:05,admin,45.83.12.10,Russia,login,failed
+2025-01-14 12:00,john,10.0.0.5,India,login,failed
+2025-01-14 12:10,john,10.0.0.5,India,login,success
+2025-01-14 13:00,maria,103.21.55.6,India,login,success
+2025-01-14 13:15,maria,103.21.55.6,India,login,failed
+2025-01-14 14:00,alice,192.168.1.10,UK,login,success
+2025-01-14 14:05,alice,192.168.1.10,UK,login,failed
+2025-01-14 15:00,alice,8.8.8.8,USA,login,success
+2025-01-14 15:10,admin,8.8.8.8,USA,login,failed
+2025-01-14 16:00,admin,8.8.8.8,USA,login,success
+2025-01-14 16:30,john,10.0.0.5,India,login,failed
+2025-01-14 17:00,john,10.0.0.5,India,login,failed
+2025-01-14 17:30,john,10.0.0.5,India,login,success
+2025-01-14 18:00,maria,103.21.55.6,India,login,success
+2025-01-14 18:30,admin,45.83.12.10,Russia,login,failed
+2025-01-14 19:00,admin,45.83.12.10,Russia,login,failed
+2025-01-14 19:30,admin,45.83.12.10,Russia,login,success
+2025-01-14 20:00,alice,192.168.1.10,UK,login,failed
+2025-01-14 20:30,alice,192.168.1.10,UK,login,failed
+
+# PowerShell activity
+2025-01-15 09:00,admin,45.83.12.10,Russia,powershell,executed
+2025-01-15 09:05,john,10.0.0.5,India,powershell,failed
+2025-01-15 09:10,maria,103.21.55.6,India,powershell,executed
+
+# Process creation
+2025-01-15 10:00,admin,8.8.8.8,USA,process_creation,success
+2025-01-15 10:05,john,10.0.0.5,India,process_creation,success
+2025-01-15 10:10,alice,192.168.1.10,UK,process_creation,failed
+
+# User added events
+2025-01-15 11:00,admin,45.83.12.10,Russia,user_added,success
+2025-01-15 11:05,john,8.34.21.6,USA,user_added,success
+2025-01-15 11:10,maria,103.21.55.6,India,user_added,failed
+2025-01-15 12:00,admin,203.0.113.1,Germany,login,success
+2025-01-15 12:05,john,198.51.100.2,France,login,failed
+2025-01-15 12:10,maria,203.0.113.3,Japan,login,success
+2025-01-15 12:15,alice,198.51.100.4,Australia,login,failed
+2025-01-15 12:20,admin,203.0.113.5,Brazil,login,success
+2025-01-15 12:25,john,198.51.100.6,Canada,login,failed
+2025-01-15 12:30,maria,203.0.113.7,Italy,login,success
+2025-01-15 12:35,alice,198.51.100.8,Spain,login,failed
+2025-01-15 12:40,admin,203.0.113.9,China,login,success
+2025-01-15 12:45,john,198.51.100.10,South Africa,login,failed
+2025-01-15 12:50,maria,203.0.113.11,Netherlands,login,success
+2025-01-15 12:55,alice,198.51.100.12,Sweden,login,failed
+2025-01-15 13:00,admin,203.0.113.13,Norway,powershell,executed
+2025-01-15 13:05,john,198.51.100.14,Finland,powershell,failed
+2025-01-15 13:10,maria,203.0.113.15,Denmark,powershell,executed
+2025-01-15 13:15,alice,198.51.100.16,Poland,powershell,failed
+2025-01-15 13:20,admin,203.0.113.17,Switzerland,process_creation,success
+2025-01-15 13:25,john,198.51.100.18,Austria,process_creation,success
+2025-01-15 13:30,maria,203.0.113.19,Belgium,process_creation,failed
+2025-01-15 13:35,alice,198.51.100.20,Portugal,process_creation,success
+2025-01-15 13:40,admin,203.0.113.21,Greece,process_creation,failed
+2025-01-15 13:45,john,198.51.100.22,Turkey,process_creation,success
+2025-01-15 13:50,maria,203.0.113.23,Israel,process_creation,failed
+2025-01-15 13:55,alice,198.51.100.24,UAE,process_creation,success
+2025-01-15 14:00,admin,203.0.113.25,Saudi Arabia,user_added,success
+2025-01-15 14:05,john,198.51.100.26,Egypt,user_added,failed
+2025-01-15 14:10,maria,203.0.113.27,Nigeria,user_added,success
+2025-01-15 14:15,alice,198.51.100.28,Kenya,user_added,failed
+2025-01-15 14:20,admin,203.0.113.29,Argentina,user_added,success
+2025-01-15 14:25,john,198.51.100.30,Chile,user_added,failed
+2025-01-15 14:30,maria,203.0.113.31,Colombia,user_added,success
+2025-01-15 14:35,alice,198.51.100.32,Peru,user_added,failed
+2025-01-15 14:40,admin,203.0.113.33,Mexico,login,success
+2025-01-15 14:45,john,198.51.100.34,USA,login,failed
+2025-01-15 14:50,maria,203.0.113.35,India,login,success
+2025-01-15 14:55,alice,198.51.100.36,UK,login,failed
+2025-01-15 15:00,admin,203.0.113.37,Russia,login,success
+2025-01-15 15:05,john,198.51.100.38,France,login,failed
+2025-01-15 15:10,maria,203.0.113.39,Germany,login,success
+2025-01-15 15:15,alice,198.51.100.40,Italy,login,failed
+2025-01-15 15:20,admin,203.0.113.41,Spain,login,success
+2025-01-15 15:25,john,198.51.100.42,Australia,login,failed
+2025-01-15 15:30,maria,203.0.113.43,Japan,login,success
+2025-01-15 15:35,alice,198.51.100.44,Canada,login,failed
+2025-01-15 15:40,admin,203.0.113.45,Brazil,login,success
+2025-01-15 15:45,john,198.51.100.46,China,login,failed
+2025-01-15 15:50,maria,203.0.113.47,South Africa,login,success
+2025-01-15 15:55,alice,198.51.100.48,Netherlands,login,failed
+
