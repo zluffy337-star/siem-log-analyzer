@@ -26,13 +26,13 @@ A compact SIEM prototype that ingests security logs (CSV), persists events to SQ
 ---
 
 ## Repository Structure
-- security_logs.csv — sample input  
-- load_logs.py — CSV ingestion → `logs` table in siem.db  
-- detect_threats.py — detection engine → `alerts` table in siem.db  
-- dashboard.py — Streamlit UI (reads logs + alerts; can run detection)  
-- country_cache.json — geocode cache  
-- siem.db — SQLite DB (ignored by Git)  
-- run_all.ps1 / run_all.bat — optional automation to run ingestion, detection, and dashboard  
+- security_logs.csv - sample input  
+- load_logs.py - CSV ingestion → `logs` table in siem.db  
+- detect_threats.py - detection engine → `alerts` table in siem.db  
+- dashboard.py - Streamlit UI (reads logs + alerts; can run detection)  
+- country_cache.json - geocode cache  
+- siem.db - SQLite DB (ignored by Git)  
+- run_all.ps1 / run_all.bat - optional automation to run ingestion, detection, and dashboard  
 - requirements.txt, .streamlit/config.toml, README.md, .gitignore
 
 ---
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ```powershell
 & ".\.venv\Scripts\python.exe" .\detect_threats.py
 ```
-Or inside the dashboard click "Run Detection Now" (sidebar) — this calls detect_threats.py and shows output.
+Or inside the dashboard click "Run Detection Now" (sidebar) - this calls detect_threats.py and shows output.
 
 3. Start the dashboard:
 ```powershell
@@ -121,3 +121,4 @@ Alerts are persisted to `alerts` table as JSON details with UTC timestamp.
 4. Start dashboard → demonstrate filters, charts, Run Detection Now button, and map.
 
 ---
+
